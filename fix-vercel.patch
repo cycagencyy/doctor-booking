@@ -1,0 +1,68 @@
+*** Begin Patch
+*** Add File: client/.vercelignore
++node_modules
++**/node_modules/**
++doc
++doc-server
++*.php
++**/*.php
++
+*** Add File: client/vercel.json
++{
++  "framework": null,
++  "buildCommand": "npm run build",
++  "outputDirectory": "build",
++  "functions": {
++    "api/**/*.js": {
++      "runtime": "nodejs20.x"
++    }
++  }
++}
+*** Add File: client/api/appointments.js
++export default function handler(req, res) {
++  if (req.method !== "GET") {
++    return res.status(405).json({ ok: false, error: "Method Not Allowed" });
++  }
++  // بيانات تجريبية — عدلها بعدين من الداتابيس
++  return res.status(200).json({
++    ok: true,
++    appointments: [
++      { id: 1, date: "2025-09-20", time: "10:00" },
++      { id: 2, date: "2025-09-20", time: "11:00" }
++    ]
++  });
++}
+*** Add File: client/api/send-email.js
++import nodemailer from "nodemailer";
++
++export default async function handler(req, res) {
++  if (req.method !== "POST") {
++    return res.status(405).json({ ok: false, error: "Method Not Allowed" });
++  }
++  try {
++    const body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : (req.body || {});
++    const { name, email, message } = body;
++    if (!name || !email || !message) {
++      return res.status(400).json({ ok: false, error: "Missing fields" });
++    }
++    const transporter = nodemailer.createTransport({
++      host: process.env.EMAIL_HOST,
++      port: Number(process.env.EMAIL_PORT || 465),
++      secure: String(process.env.EMAIL_SECURE || "true") === "true",
++      auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS }
++    });
++    const info = await transporter.sendMail({
++      from: process.env.EMAIL_FROM || process.env.EMAIL_USER,
++      to: process.env.EMAIL_TO || process.env.EMAIL_USER,
++      replyTo: email,
++      subject: `New message from ${name}`,
++      text: message
++    });
++    return res.status(200).json({ ok: true, id: info.messageId });
++  } catch (e) {
++    console.error(e);
++    return res.status(500).json({ ok: false, error: "Email failed" });
++  }
++}
++
+*** End Patch
