@@ -1,8 +1,11 @@
 {
-  "version": 2,
-  "buildCommand": "npm ci --prefix client || npm install --prefix client && npm run build --prefix client",
+  "buildCommand": "cd client && npm install && npm run build",
   "outputDirectory": "client/build",
   "functions": {
-    "api/*.js": { "runtime": "nodejs18.x" }
+    "api/*.js": {
+      "runtime": "nodejs20.x",
+      "memory": 128,
+      "maxDuration": 10
+    }
   }
 }
