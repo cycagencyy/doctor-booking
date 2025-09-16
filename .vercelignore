@@ -1,5 +1,8 @@
 server/
 doc/
+doc-server/
+now.json
+now.*
 *.md
 !README.md
 .github/
