@@ -1,0 +1,254 @@
+/* Dark Mode Styles */
+
+.dark-mode {
+  --bg-primary: #1A1A1A;
+  --bg-secondary: #2D2D2D;
+  --bg-tertiary: #404040;
+  --text-primary: #ECF0F1;
+  --text-secondary: #BDC3C7;
+  --text-muted: #95A5A6;
+  --border-color: #404040;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --accent: #4A90E2;
+  --success: #2ECC71;
+  --warning: #F39C12;
+  --danger: #E74C3C;
+}
+
+.dark-mode body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.dark-mode .card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.dark-mode .form-control {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.dark-mode .form-control:focus {
+  background-color: var(--bg-secondary);
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.dark-mode .btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.dark-mode .btn-primary:hover {
+  background-color: #357ABD;
+  border-color: #357ABD;
+}
+
+.dark-mode .btn-success {
+  background-color: var(--success);
+  border-color: var(--success);
+}
+
+.dark-mode .btn-danger {
+  background-color: var(--danger);
+  border-color: var(--danger);
+}
+
+.dark-mode .table {
+  color: var(--text-primary);
+}
+
+.dark-mode .table th {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.dark-mode .table td {
+  border-color: var(--border-color);
+}
+
+.dark-mode .table tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.dark-mode .alert {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.dark-mode .alert-success {
+  background-color: rgba(46, 204, 113, 0.1);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.dark-mode .alert-danger {
+  background-color: rgba(231, 76, 60, 0.1);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.dark-mode .alert-warning {
+  background-color: rgba(243, 156, 18, 0.1);
+  border-color: var(--warning);
+  color: var(--warning);
+}
+
+.dark-mode .alert-info {
+  background-color: rgba(52, 152, 219, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.dark-mode .navbar {
+  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+}
+
+.dark-mode .footer {
+  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+}
+
+.dark-mode .hero-section {
+  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+}
+
+.dark-mode .feature-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode .feature-card:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.dark-mode .stat-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode .modal-content {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode .modal-header {
+  border-bottom-color: var(--border-color);
+}
+
+.dark-mode .modal-footer {
+  border-top-color: var(--border-color);
+}
+
+.dark-mode .dropdown-menu {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode .dropdown-item {
+  color: var(--text-primary);
+}
+
+.dark-mode .dropdown-item:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.dark-mode .badge {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.dark-mode .badge-success {
+  background-color: var(--success);
+  color: white;
+}
+
+.dark-mode .badge-warning {
+  background-color: var(--warning);
+  color: white;
+}
+
+.dark-mode .badge-danger {
+  background-color: var(--danger);
+  color: white;
+}
+
+.dark-mode .badge-info {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* تحسينات للتقويم */
+.dark-mode .react-calendar {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode .react-calendar__tile {
+  color: var(--text-primary);
+}
+
+.dark-mode .react-calendar__tile:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.dark-mode .react-calendar__tile--active {
+  background-color: var(--accent);
+  color: white;
+}
+
+.dark-mode .react-calendar__tile--disabled {
+  color: var(--text-muted);
+}
+
+/* تحسينات للـ Toast */
+.dark-mode .Toastify__toast {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.dark-mode .Toastify__toast--success {
+  background-color: rgba(46, 204, 113, 0.9);
+}
+
+.dark-mode .Toastify__toast--error {
+  background-color: rgba(231, 76, 60, 0.9);
+}
+
+.dark-mode .Toastify__toast--warning {
+  background-color: rgba(243, 156, 18, 0.9);
+}
+
+.dark-mode .Toastify__toast--info {
+  background-color: rgba(52, 152, 219, 0.9);
+}
+
+/* تحسينات للـ Loading */
+.dark-mode .spinner {
+  border-color: var(--bg-tertiary);
+  border-top-color: var(--accent);
+}
+
+/* تحسينات للـ Scrollbar */
+.dark-mode ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

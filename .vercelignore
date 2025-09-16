@@ -1,0 +1,14 @@
+server/
+doc/
+*.md
+!README.md
+.github/
+.gitignore
+.gitignore-simple
+LICENSE*
+*.bat
+*.ps1
+*.sh
+docker-compose.yml
+Dockerfile
+railway.json

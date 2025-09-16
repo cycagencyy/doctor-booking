@@ -1,0 +1,23 @@
+{
+  "name": "doctor-booking-system",
+  "version": "1.0.0",
+  "description": "نظام حجز مواعيد الدكتور",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "echo 'استخدم start-all.bat أو start-all.ps1'",
+    "server": "cd server && node simple-server.js",
+    "client": "cd client && npm start"
+  },
+  "keywords": [
+    "doctor",
+    "booking",
+    "appointment",
+    "medical"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/doctor-booking-system.git"
+  }
+}

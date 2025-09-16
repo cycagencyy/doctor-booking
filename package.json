@@ -1,0 +1,44 @@
+{
+  "name": "doctor-booking-system",
+  "version": "1.0.0",
+  "description": "نظام شامل لإدارة حجوزات المواعيد الطبية",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "build": "cd client && npm install && npx --yes react-scripts@5.0.1 build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "cd server && npm test && cd ../client && npm test"
+  },
+  "keywords": [
+    "doctor",
+    "booking",
+    "appointment",
+    "medical",
+    "healthcare",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Your Name <your-email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/doctor-booking-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/doctor-booking-system/issues"
+  },
+  "homepage": "https://github.com/your-username/doctor-booking-system#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "react-scripts": "5.0.1",
+    "nodemailer": "^6.9.13"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
