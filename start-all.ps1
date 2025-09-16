@@ -17,3 +17,4 @@ Write-Host "العميل: http://localhost:3000" -ForegroundColor Blue
 Write-Host ""
 Write-Host "اضغط أي مفتاح للخروج..." -ForegroundColor Magenta
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+

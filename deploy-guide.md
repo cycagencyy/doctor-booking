@@ -117,3 +117,4 @@ DEFAULT_DOCTOR_EMAIL=doctor@example.com
 1. تحقق من console في المتصفح
 2. تحقق من logs في Vercel/Railway
 3. تأكد من أن جميع المتغيرات مُعدة بشكل صحيح
+

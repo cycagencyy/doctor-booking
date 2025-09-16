@@ -48,3 +48,4 @@ Write-Host ""
 Write-Host "يمكنك الآن رؤية مشروعك على GitHub" -ForegroundColor Blue
 Write-Host "اضغط Enter للخروج..." -ForegroundColor Yellow
 Read-Host
+

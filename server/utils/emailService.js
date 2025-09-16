@@ -221,3 +221,4 @@ module.exports = {
   sendAppointmentEmail,
   sendDailyAppointmentsEmail
 };
+

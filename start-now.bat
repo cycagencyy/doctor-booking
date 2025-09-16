@@ -29,3 +29,4 @@ echo الإدارة: admin@example.com / admin123
 echo.
 echo اضغط أي مفتاح للخروج...
 pause > nul
+

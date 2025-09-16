@@ -47,3 +47,4 @@ end_of_line = crlf
 # PowerShell files
 [*.ps1]
 end_of_line = crlf
+

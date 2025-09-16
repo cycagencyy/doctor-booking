@@ -86,3 +86,4 @@ appointmentSchema.statics.getAvailableTimeSlots = function(date) {
 };
 
 module.exports = mongoose.model('Appointment', appointmentSchema);
+

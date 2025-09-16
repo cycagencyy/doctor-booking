@@ -1,0 +1,5 @@
+# تجاهل أي إعدادات داخل الحزم أو الدوكيومنتس
+node_modules
+**/node_modules/**
+doc
+doc-server
