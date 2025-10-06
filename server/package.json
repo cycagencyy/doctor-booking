@@ -14,7 +14,7 @@
     "mongoose": "^8.0.3",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
-    "nodemailer": "^6.9.7",
+    "nodemailer": "^7.0.7",
     "moment": "^2.29.4",
     "express-validator": "^7.0.1"
   },
